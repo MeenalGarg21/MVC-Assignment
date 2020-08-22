@@ -1,0 +1,13 @@
+﻿@model MVCAppDemoWithAuthtentication.Models.Movie
+@{
+    ViewBag.Title = "Details1";
+}
+
+<h2>Movie Details</h2>
+<h2>@Model.Name</h2>
+<h2>@Model.MovieType</h2>
+<div>
+    @Html.ActionLink("Back", "Index1", "Movie", null);
+</div>
+
+

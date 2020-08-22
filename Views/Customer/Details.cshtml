@@ -1,0 +1,16 @@
+﻿@model MVCAppDemoWithAuthtentication.Models.Customer
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details Of The Customer</h2>
+<p>MemberShipType:@Model.memberShipType.DiscountRate%</p>
+@Html.CheckBoxFor(c=>c.IsSubscribedToNewsLetter)
+
+
+@Html.ActionLink("Back", "Index", "Customers", null, new { @class = "btn btn-primary" })
+
+    
+<tr>
+    <td>@Model.DateOfBirth.ToLongDateString()</td>
+</tr>
